@@ -1,0 +1,222 @@
+:root {
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #FFFFFF;
+
+    --font-young: "Young Serif", serif;
+    --font-outfit: "Outfit", sans-serif;
+
+    --spacing-1600: 128px;
+    --spacing-600: 48px;
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--spacing-1600) var(--spacing-600);
+    background-color: var(--stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: var(--spacing-300);
+    padding: var(--spacing-500);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-500);
+}
+
+.card img {
+    height: 300px;
+    border-radius: var(--spacing-150);
+    object-fit: cover;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-400);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-300);
+}
+
+.preparation {
+    background-color: var(--rose-50);
+    padding: var(--spacing-300);
+    border-radius: var(--spacing-150);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-300);
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-300);
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-300);
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-300);
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-150);
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-200);
+    padding: 0 var(--spacing-400);
+}
+
+.table-row span {
+    flex: 1;
+}
+
+.line {
+    border: 1px solid var(--stone-150);
+}
+
+.text-preset1 {
+    font-size: 40px;
+    font-family: var(--font-young);
+    font-weight: 400;
+    color: var(--stone-900);
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text-preset2 {
+    font-size: 28px;
+    font-family: var(--font-young);
+    font-weight: 400;
+    color: var(--brown-800);
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text-preset3 {
+    font-size: 20px;
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    color: var(--rose-800);
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text-preset4 {
+    font-size: 16px;
+    font-family: var(--font-outfit);
+    font-weight: 400;
+    color: var(--stone-600);
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-preset4-bold {
+    font-size: 16px;
+    font-family: var(--font-outfit);
+    font-weight: 700;
+    color: var(--stone-600);
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-brown {
+    color: var(--brown-800);
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-100);
+}
+
+.row-flex {
+    display: flex;
+    column-gap: var(--spacing-200);
+    padding-left: var(--spacing-100);
+    align-items: center;
+}
+
+.row-flex-top {
+    display: flex;
+    column-gap: var(--spacing-200);
+    padding-left: var(--spacing-100);
+    align-items: flex-start;
+}
+
+.ellipsis-container {
+    width: var(--spacing-200);
+}
+
+.ellipsis {
+    background-color: var(--rose-800);
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .card img {
+        border-radius: 0;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .text-content {
+        padding: var(--spacing-400) var(--spacing-500);
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 616px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 736px;
+    }
+}
