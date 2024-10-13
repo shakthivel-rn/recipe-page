@@ -34,6 +34,10 @@ body {
     align-items: center;
 }
 
+h1 {
+    margin: 0;
+}
+
 .card {
     background-color: var(--white);
     border-radius: var(--spacing-300);
